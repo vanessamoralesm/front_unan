@@ -1,71 +1,99 @@
-import { Facebook, InstagramIcon, TwitterIcon } from "lucide-react";
+import { Facebook, InstagramIcon, TwitterIcon, Phone, Mail, MapPin } from "lucide-react";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-blue-900 text-white py-10">
       <Container>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+          
+          {/* Logo y descripción */}
+          <div>
+            <h2 className="text-xl font-semibold">Logo</h2>
+            <p className="mt-2 text-sm leading-relaxed max-w-md text-justify">
+              Lorem ipsum dolor sit amet consectetur. Bibendum elementum tellus dignissim in pulvinar gravida arcu purus mi.
+            </p>
 
-      <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-4">
-              <Facebook/>
+            <div className="flex gap-3 mt-4">
+              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+                <Facebook size={20} />
+              </Link>
+              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+                <InstagramIcon size={20} />
+              </Link>
+              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+                <TwitterIcon size={20} />
+              </Link>
             </div>
-            <div className="flex items-center gap-4">
-            <InstagramIcon/>
-            </div>
-            <div className="flex items-center gap-4">
-            <TwitterIcon/>
-            </div>
-          </div>  
+          </div>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex flex-row gap-10">
+            {/* Navegación */}
+            <div>
+              <h3 className="font-semibold text-lg">Navegación</h3>
+              <ul className="mt-2 space-y-2 text-sm">
+                <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
+                <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
+                <li><Link to="/proyectos" className="hover:underline">Proyectos</Link></li>
+                <li><Link to="/foros" className="hover:underline">Foros</Link></li>
+              </ul>
+            </div>
 
-        <div>
-          <h3 className="font-semibold text-lg">Navegación</h3>
-          <ul className="mt-2 space-y-2">
-            <li><a href="#" className="hover:underline">Eventos</a></li>
-            <li><a href="#" className="hover:underline">Noticias</a></li>
-            <li><a href="#" className="hover:underline">Proyectos</a></li>
-            <li><a href="#" className="hover:underline">Foros</a></li>
-          </ul>
+            <div>
+              <h3 className="font-semibold text-lg">Eventos</h3>
+              <ul className="mt-2 space-y-2 text-sm">
+                <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
+                <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
+                <li><Link to="/proyectos" className="hover:underline">Proyectos</Link></li>
+                <li><Link to="/foros" className="hover:underline">Foros</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">Eventos</h3>
+              <ul className="mt-2 space-y-2 text-sm">
+                <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
+                <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
+                <li><Link to="/proyectos" className="hover:underline">Proyectos</Link></li>
+                <li><Link to="/foros" className="hover:underline">Foros</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">Contactos</h3>
+              <ul className="mt-4 space-y-4 text-sm">
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <Phone size={20} /> <span>+15 99938283812</span>
+                  </div>
+                  <span className="text-xs text-gray-300">Número de celular</span>
+                  <hr className="border-gray-600" />
+                </li>
+
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <Mail size={20} /> <span>exemple@gmail.com</span>
+                  </div>
+                  <span className="text-xs text-gray-300">Correo</span>
+                  <hr className="border-gray-600" />
+                </li>
+
+                <li className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={20} /> <span>Perú</span>
+                  </div>
+                  <span className="text-xs text-gray-300">Ubicación</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold text-lg">Eventos</h3>
-          <ul className="mt-2 space-y-2">
-            <li><a href="#" className="hover:underline">Eventos</a></li>
-            <li><a href="#" className="hover:underline">Noticias</a></li>
-            <li><a href="#" className="hover:underline">Proyectos</a></li>
-            <li><a href="#" className="hover:underline">Foros</a></li>
-          </ul>
+        <div className="text-right mt-10 border-t border-gray-500 pt-4 text-sm text-gray-300">
+          Copyright ©2025
         </div>
-
-        <div>
-          <h3 className="font-semibold text-lg">Contactos</h3>
-          <ul className="mt-2 space-y-3">
-            <li className="flex items-center gap-2">
-              <span className="text-xl"></span> <a href="" className="hover:underline">+505 88426945</a>
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-xl"></span> <a href="" className="hover:underline">unanleon@gmail.com</a>
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-xl"></span> <span>LEON-Nicaragua</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="text-center mt-6 border-t border-gray-500 pt-4 text-sm">
-        Copyright ©2025
-      </div>
-
-      </div>    
-        
-
-
-
       </Container>
     </footer>
-  )
+  );
 }
