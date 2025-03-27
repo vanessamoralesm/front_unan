@@ -112,7 +112,7 @@
 @theme {
   --font-primary: "Outfit", sans-serif;
   --color-blue-primary:#243982;
-  --color-red-primary:#243982;
+  --color-red-primary:#920A18;
   --color-yellow-primary:#EEC02C;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .hero{
-  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/hero.png');
+  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/scroll/hero.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
