@@ -2,9 +2,10 @@ import { Facebook, InstagramIcon, TwitterIcon, Phone, Mail, MapPin } from "lucid
 import Container from "../Container";
 import { Link } from "react-router-dom";
 
+
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-10">
+    <footer className=" text-white py-10 footer">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
           
