@@ -125,9 +125,23 @@
   }
 }
 
-.hero{
-  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/scroll/hero.png');
+.hero,.project-main-card,.video-main{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero{
+  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/scroll/hero.png');
+}
+.project-main-card{
+  background: linear-gradient(to bottom, transparent, #243982) ,url('./assets/img/scroll/hero.png');
+}
+
+.video-main{
+  background-image: url('./assets/img/video_placeholder.png');
+}
+
+.form-main{
+  background-image: linear-gradient(90deg, #fff 0%, #fff 50%, var(--color-blue-primary) 50%, var(--color-blue-primary) 100%);
 }
