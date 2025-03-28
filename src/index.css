@@ -126,7 +126,7 @@
 }
 
 .hero{
-  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/hero.png');
+  background:linear-gradient(#000000b6,#000000b6), url('./assets/img/scroll/hero.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
