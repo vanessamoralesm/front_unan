@@ -68,7 +68,7 @@ export default function Footer() {
                   <div className="flex items-center gap-2">
                     <Phone size={20} /> <span>+15 99938283812</span>
                   </div>
-                  <span className="text-xs text-gray-300">Número de celular</span>
+                  <span className="text-sm text-gray-300">Número de celular</span>
                   <hr className="border-gray-600" />
                 </li>
 
@@ -76,7 +76,7 @@ export default function Footer() {
                   <div className="flex items-center gap-2">
                     <Mail size={20} /> <span>exemple@gmail.com</span>
                   </div>
-                  <span className="text-xs text-gray-300">Correo</span>
+                  <span className="text-sm text-gray-300">Correo</span>
                   <hr className="border-gray-600" />
                 </li>
 
@@ -84,7 +84,7 @@ export default function Footer() {
                   <div className="flex items-center gap-2">
                     <MapPin size={20} /> <span>Perú</span>
                   </div>
-                  <span className="text-xs text-gray-300">Ubicación</span>
+                  <span className="text-sm text-gray-300">Ubicación</span>
                 </li>
               </ul>
             </div>

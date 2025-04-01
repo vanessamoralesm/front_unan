@@ -21,7 +21,7 @@ export default function Masters() {
             Ver todos los mentores
             <MoveRight className="group-hover/link:translate-x-2 transition-all duration-300" />
           </Link>
-          <div className="mt-10 grid grid-cols-3 gap-4">
+          <div className="mt-10 grid grid-cols-3 gap-4 mx-auto max-w-5xl">
             <article className="overflow-hidden rounded-md shadow">
               <figure className="w-full h-40">
                 <img
