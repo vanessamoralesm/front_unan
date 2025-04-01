@@ -125,7 +125,7 @@
   }
 }
 
-.hero,.project-main-card,.video-main{
+.hero,.project-main-card,.video-main, .footer{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,6 +147,6 @@
 }
 
 .footer{
-  background: linear-gradient(180deg, #243982F2 0%, #243982D9 30%, #243982B3 60%, #243982E6 100%), url('./assets/img/footer.png');
+  background: linear-gradient( #243982E6,#243982E6), url('./assets/img/footer.png');
   backdrop-filter: blur(10px);
 }

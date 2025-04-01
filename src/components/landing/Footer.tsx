@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className=" text-white py-10 footer">
+    <footer className=" text-white py-18 footer">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
           
@@ -17,13 +17,13 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-3 mt-4">
-              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+              <Link to="#" className="size-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20">
                 <Facebook size={20} />
               </Link>
-              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+              <Link to="#" className="size-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20">
                 <InstagramIcon size={20} />
               </Link>
-              <Link to="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20">
+              <Link to="#" className="size-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20">
                 <TwitterIcon size={20} />
               </Link>
             </div>
@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="flex flex-row gap-10">
             {/* Navegación */}
             <div>
-              <h3 className="font-semibold text-lg">Navegación</h3>
+              <h3 className="font-semibold text-base">Navegación</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
                 <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg">Eventos</h3>
+              <h3 className="font-semibold text-base">Eventos</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
                 <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg">Eventos</h3>
+              <h3 className="font-semibold text-base">Eventos</h3>
               <ul className="mt-2 space-y-2 text-sm">
                 <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
                 <li><Link to="/noticias" className="hover:underline">Noticias</Link></li>
@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg">Contactos</h3>
+              <h3 className="font-semibold text-base">Contactos</h3>
               <ul className="mt-4 space-y-4 text-sm">
                 <li className="flex flex-col gap-2">
                   <div className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-right mt-10 border-t border-gray-500 pt-4 text-sm text-gray-300">
+        <div className="text-right mt-10 border-t border-gray-500 pt-6 text-sm text-gray-300">
           Copyright ©2025
         </div>
       </Container>
