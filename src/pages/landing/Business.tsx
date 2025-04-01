@@ -1,13 +1,12 @@
 import Container from "@/components/Container"
 import title from '@/assets/img/tittle/tittle_financiamiento.png'
 import Text from "@/components/Text"
-import LogoSckeleton from '@/assets/img/logos/logo_sckeleton.png'
 import BusinessCard from "@/components/landing/business/BusinessCard"
 export default function Business() {
   return (
-    <div className="">
+    <div className="mt-10">
       <Container>
-        <div className="py-20 px-14 font-semibold text-5xl text-white bg-cover bg-center bg-no-repeat" style={{ background: ` linear-gradient( #243982E6,#243982E6) ,url(${title})` }}>
+        <div className="py-26 px-14 font-semibold text-5xl text-white bg-cover bg-center bg-no-repeat" style={{ background: ` linear-gradient( #243982E6,#243982E6) ,url(${title})` }}>
           <h1>Financiamiento</h1>
         </div>
         <section className="py-20">

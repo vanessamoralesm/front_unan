@@ -12,6 +12,7 @@ import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import Dashboard from "@/pages/admin/Dashboard";
 import Investigation from "@/pages/landing/Investigation";
+import Enterprise from "@/pages/landing/Enterprise";
 
 export default function Index() {
 
@@ -51,6 +52,10 @@ export default function Index() {
                 {
                     path: 'investigacion',
                     element: <Investigation />
+                },
+                {
+                    path:'emprendimiento',
+                    element: <Enterprise />
                 }
             ]
         },
