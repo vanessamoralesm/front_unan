@@ -7,9 +7,10 @@ export function cn(...inputs: ClassValue[]) {
 
 
 export const linksHeader = [
-  { name: 'Inicio', href: '#' },
-  { name: 'Maestros', href: '#' },
-  { name: 'Proyectos', href: '#' },
-  { name: 'Eventos', href: '#' },
-  { name: 'Contactos', href: '#' },
+  { name: 'Inicio', href: '/' },
+  { name: 'Maestros', href: '/maestros' },
+  { name: 'Proyectos', href: '/proyectos' },
+  { name: 'Eventos', href: '/eventos' },
+  { name: 'Contactos', href: '/contactos' },
 ]
+
