@@ -11,6 +11,7 @@ import Auth from "@/pages/auth/Auth";
 import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import Dashboard from "@/pages/admin/Dashboard";
+import Investigation from "@/pages/landing/Investigation";
 
 export default function Index() {
 
@@ -47,6 +48,10 @@ export default function Index() {
                     path:'contactos',
                     element: <Contact/>
                 },
+                {
+                    path: 'investigacion',
+                    element: <Investigation />
+                }
             ]
         },
         {

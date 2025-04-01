@@ -125,7 +125,7 @@
   }
 }
 
-.hero,.project-main-card,.video-main, .footer{
+.hero,.project-main-card,.video-main, .footer, .banner{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,4 +149,10 @@
 .footer{
   background: linear-gradient( #243982E6,#243982E6), url('./assets/img/footer.png');
   backdrop-filter: blur(10px);
+}
+
+.banner{
+  background: linear-gradient( rgba(24, 18, 0, 0.74), rgba(24, 18, 0, 0.74)) ,url('./assets/img/scroll/hero.png');
+  padding: 6rem 0;
+  color: white;
 }
