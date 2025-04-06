@@ -19,7 +19,7 @@ export default function Investigation() {
         </Container>
       </div>
       <section className="p-32">
-        <Container className="flex gap-8 items-center">
+        <Container className="flex gap-10 items-center">
           <div className="flex-1">
             <Text as="paragraph">BIENVENIDO</Text>
             <Text as="subtitle">!Conocenos¡</Text>
@@ -27,7 +27,7 @@ export default function Investigation() {
             <p className="text-gray-400"> Explora la diversidad de productos científicos y noticias derivados  de nuestras investigaciones internas y colaboraciones con otras  instituciones, centros de investigación y empresas  científico-tecnológicas.</p>
           </div>
           <div className="flex-1">
-            <figure className="relative">
+            <figure className="relative max-w-lg mx-auto">
               <div className="absolute top-1/3 left-0 right-0 bottom-0 bg-red-primary translate-x-7 translate-y-7"></div>
               <img src={Students} alt="estudiantes haciendo un proyecto" className="w-full object-cover block relative" />
             </figure>
@@ -142,14 +142,12 @@ export default function Investigation() {
       </section>
       <section className="py-20">
         <Container>
-          <Banner className="flex items-center justify-between">
-            <span className="max-w-xl">CONOCE NUESTROS PROYECTOS</span>
-            <Link to={'/proyectos'}>
-              <Button variant={'outline'} className="bg-transparent py-6 px-8">
-                VER PROJECTOS
-              </Button>
-            </Link>
-          </Banner>
+          <Banner 
+            withFigures={false}
+            text="CONOCE NUESTROS PROYECTOS" 
+            textButton="VER PROJECTOS"
+            href={'/proyectos'}
+          />
         </Container>
       </section>
     </div>

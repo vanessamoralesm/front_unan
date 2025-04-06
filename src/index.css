@@ -193,3 +193,103 @@
 .header-link.active{
   color: var(--color-blue-primary);
 }
+
+
+.card-teacher{
+  position: relative;
+  height: 14.125rem;
+}
+
+.card-teacher:not(:hover) {
+  animation: animation-card-teacher-overflow-reverse 0.4s;
+}
+
+.card-teacher:hover{
+  animation: animation-card-teacher-overflow 0.4s forwards;
+}
+
+.card-teacher:hover .card-teacher-information{
+  opacity: 1;
+}
+.card-teacher:hover .card-teacher-profile{
+  animation: animation-card-teacher 0.4s forwards;
+}
+.card-teacher:not(:hover) .card-teacher-profile{
+  animation: animation-card-teacher-reverse 0.4s forwards;
+}
+
+
+.card-teacher-information{
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-red-primary);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.card-teacher-profile{
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  margin:  0 auto;
+  max-width: 600px;
+  transform: translateY(50%);
+  background-color: var(--color-red-primary);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+@keyframes animation-card-teacher {
+  0% {
+    transform: translateY(50%);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes animation-card-teacher-reverse {
+  0% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+@keyframes animation-card-teacher-overflow {
+  0%{
+    overflow: visible;
+  }
+  50% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: hidden;
+  } 
+}
+@keyframes animation-card-teacher-overflow-reverse {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  } 
+}

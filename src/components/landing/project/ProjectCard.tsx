@@ -15,7 +15,7 @@ export default function ProjectCard() {
           phasellus enim etiam. Integer at non venenatis convallis libero
           faucibus eu mi. Placerat a magna congue erat odio.
         </p>
-        <Button variant={"secondary"} size={"xl"} className="mt-8 flex ml-auto">
+        <Button variant={"secondary"} className="mt-8 flex ml-auto">
           {" "}
           Descargar PDF <DownloadCloud width={20} height={20} />
         </Button>

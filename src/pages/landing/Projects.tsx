@@ -7,27 +7,16 @@ import ProjectCard from "@/components/landing/project/ProjectCard";
 import Banner from "@/components/landing/Banner";
 import ProjectBanner from '@/assets/img/proyectos-banner.png'
 import HeroProject from '@/assets/img/tittle/tittle_proyectos.png'
+import BannerHero from "@/components/BannerHero";
 export default function Projects() {
   return (
     <div>
-      <div
-        className="py-24 text-white"
-        style={{
-          background: ` linear-gradient( #243982E6,#243982E6) ,url(${HeroProject})`,
-        }}
-      >
-        <Container>
-          <div>
-            <h1 className="text-4xl font-semibold mb-4">Proyectos</h1>
-            <p className="text-white/80 max-w-3xl">
-              Lorem ipsum dolor sit amet consectetur. Risus odio ullamcorper
-              phasellus enim etiam. Integer at non venenatis convallis libero
-              faucibus eu mi. Placerat a magna congue erat odio. Nibh odio
-              sapien quis pharetra purus.
-            </p>
-          </div>
-        </Container>
-      </div>
+      <BannerHero  
+        title="Proyectos" 
+        description="Lorem ipsum dolor sit amet consectetur. Risus odio ullamcorper phasellus enim etiam. Integer at non venenatis convallis libero faucibus eu mi. Placerat a magna congue erat odio. Nibh odio sapien quis pharetra purus." 
+        url={HeroProject} 
+        color="#243982E6"/>
+  
       <section className="grid grid-cols-2 items-center">
         <div className="text-white p-20 flex-1 flex justify-center">
           <div className="max-w-2xl w-full">
@@ -113,12 +102,14 @@ export default function Projects() {
       </section>
       <section className="py-20">
         <Container>
-            <Banner className="flex items-center justify-between" variant="transparent" url={ProjectBanner}>
-                <span className="max-w-xl">¿YA VISTES NUESTROS ULTIMOS EVENTOS? </span>
-                <Button variant={'outline'} className="bg-transparent py-6 px-8">
-                    VER EVENTOS
-                </Button>
-            </Banner>
+            <Banner  
+              variant="transparent" 
+              url={ProjectBanner} 
+              text="¿YA VISTES NUESTROS ULTIMOS EVENTOS?" 
+              textButton="VER EVENTOS" 
+              href={'/eventos'}
+            />
+            
         </Container>
     </section>
     </div>

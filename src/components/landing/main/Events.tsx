@@ -40,7 +40,7 @@ export default function Events() {
                     </div>
                 </div>
                 
-                <Button variant={'blue'} className="block ml-auto mt-8 h-auto py-3 px-6">VER MÁS</Button>
+                <Button variant={'blue'} className="block ml-auto mt-8 h-auto ">Ver más</Button>
               </div>
             </article>
             <article className="overflow-hidden rounded-md shadow-2xl shadow-blue-primary/10">
@@ -69,7 +69,7 @@ export default function Events() {
                     </div>
                 </div>
                 
-                <Button variant={'blue'} className="block ml-auto mt-8 h-auto py-3 px-6">VER MÁS</Button>
+                <Button variant={'blue'} className="block ml-auto mt-8 h-auto ">Ver más</Button>
               </div>
             </article>
             <article className="overflow-hidden rounded-md shadow-2xl shadow-blue-primary/10">
@@ -97,7 +97,7 @@ export default function Events() {
                         10:00 am
                     </div>
                 </div>
-                <Button variant={'blue'} className="block ml-auto mt-8 h-auto py-3 px-6">VER MÁS</Button>
+                <Button variant={'blue'} className="block ml-auto mt-8 h-auto ">Ver más</Button>
               </div>
             </article>
           </div>
