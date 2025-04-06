@@ -10,9 +10,9 @@ interface Props {
 }
 export default function ContactCard({ className = "", title, text, Icon }: Props) {
   return (
-    <article className={cn("bg-gray-50 p-6 rounded-lg", className)}>    
+    <article className={cn("bg-gray-50 p-5 rounded-lg", className)}>    
       <Icon className="text-red-primary" />
-      <p className="font-medium text-gray-700 mt-6 text-lg">
+      <p className="font-medium text-gray-700 mt-6 text-base  lg:text-lg">
         {title}
       </p>
       <span className="text-gray-400 text-sm">{text}</span>

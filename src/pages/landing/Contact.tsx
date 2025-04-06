@@ -24,9 +24,9 @@ export default function Contact() {
               commodi fugiat illum?
             </p>
           </div>
-          <div className="grid gap-8 grid-cols-2 mt-10">
+          <div className="grid gap-8 md:grid-cols-2 mt-10">
             <div className="grid gap-4">
-              <div className="grid gap-4 grid-cols-2">
+              <div className="grid gap-4 lg:grid-cols-2">
                 <div>
                   <Label className="mb-2 inline-block" htmlFor="name">
                     Nombre
@@ -63,13 +63,13 @@ export default function Contact() {
               <Button
                 variant={"blue"}
                 size={"xl"}
-                className="ml-auto mt-4 flex"
+                className="md:ml-auto mt-4 w-full md:w-auto" 
               >
                 CONTACTAR
               </Button>
             </div>
             <div className="">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <ContactCard 
                     title="Correo Electrónico"
                     text="example@gmail.com"
@@ -85,7 +85,7 @@ export default function Contact() {
                   title="UNIVERSIDAD UNAN"
                   text="123 Sample St, Sydney NSW 2000 AU"
                   Icon={MapPin}
-                  className="col-span-2" />
+                  className="md:col-span-2" />
               </div>
             </div>
           </div>
