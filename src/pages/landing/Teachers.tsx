@@ -16,9 +16,9 @@ export default function Teachers() {
         description="Lorem ipsum dolor sit amet consectetur. Risus odio ullamcorper phasellus enim etiam. Integer at non venenatis convallis libero faucibus eu mi. Placerat a magna congue erat odio. Nibh odio sapien quis pharetra purus."
         url={HeroTeacher}
         color="#940a18b3" />
-      <section className="py-20">
-        <div className="grid grid-cols-2 items-center">
-          <div className="text-white p-20 flex-1">
+      <section className="py-12 md:py-20">
+        <div className="grid xl:grid-cols-2 items-center">
+          <div className="text-white p-12 md:p-20 ">
             <div className="max-w-2xl w-full">
               <Text as="paragraph" className="">EXPLORA</Text>
               <Text as="subtitle" className="mb-4 leading-[1.25] mt-1 ">Guiándote en tu camino universitario</Text>
@@ -28,8 +28,8 @@ export default function Teachers() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <figure className="relative max-w-lg w-fu mx-auto">
-              <div className="absolute top-1/3 left-0 right-0 bottom-0 bg-red-primary translate-x-7 translate-y-7"></div>
+            <figure className="relative max-w-lg w-[90%] mx-auto">
+              <div className="absolute top-1/3 left-0 right-0 bottom-0 bg-red-primary translate-x-3 translate-y-3 md:translate-x-7 md:translate-y-7"></div> 
               <img src={Mentores} alt="estudiantes haciendo un proyecto" className="w-full object-cover block relative" />
             </figure>
           </div>
@@ -49,7 +49,7 @@ export default function Teachers() {
             <Text as="paragraph">CONOCELOS</Text>
             <Text as="subtitle" className="mb-4">Nuestros Mentores</Text>
           </div>
-          <div className="grid grid-cols-3 gap-x-4 gap-y-18">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-18">
             <TeacherCard />
             <TeacherCard />
             <TeacherCard /> 
