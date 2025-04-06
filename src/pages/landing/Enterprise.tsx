@@ -12,9 +12,9 @@ export default function Enterprise() {
     <div>
       <section className="">
         <Container>
-          <div className="grid gap-4 grid-cols-2">
-            <div className="py-48">
-              <h1 className=" text-5xl font-semibold text-blue-primary leading-[1.25]">
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="py-20 md:py-48">
+              <h1 className=" text-3xl md:text-5xl font-semibold text-blue-primary leading-[1.25]">
                 Transformando ideas en realidades inspiradoras
               </h1>
               <p className="text-gray-400 mt-4">
@@ -23,7 +23,7 @@ export default function Enterprise() {
                 y la creatividad.
               </p>
             </div>
-            <div className="grid grid-cols-2 grid-rows-5 gap-4">
+            <div className="grid md:grid-cols-2 grid-rows-5 gap-4">
               <img
                 src={Enterprise1}
                 alt="enterprise1"
@@ -50,7 +50,7 @@ export default function Enterprise() {
       </section>
       <section className="py-32">
         <Container>
-          <div className="flex justify-between">
+          <div className="flex flex-col md:flex-row gap-4 justify-between">
             <div className="w-full max-w-2xl">
               <Text as="paragraph">INNOVACIÓN</Text>
               <Text as="subtitle" className="mt-2 leading-[1.2]">
@@ -73,7 +73,7 @@ export default function Enterprise() {
             <Text as="subtitle" className="text-center mb-10">
               Nuestros Valores
             </Text>
-            <div className="grid grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               <EnterpriseCard />
               <EnterpriseCard />
               <EnterpriseCard />
