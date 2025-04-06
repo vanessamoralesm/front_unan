@@ -6,7 +6,7 @@ export default function Program() {
     return (
         <div>
             <SectionGrid>
-                <div className="p-20">
+                <div className="p-11 md:p-20">
                     <Text as="subtitle" color={'red'}>Programa de Incubación y Aceleración de Negocios</Text>
                     <p className="text-gray-400 mt-4">En nuestro emprendimiento, cada proyecto es una oportunidad para innovar y crecer. Únete a nosotros en este viaje hacia el éxito y la creatividad.</p>
                 </div>
@@ -15,7 +15,7 @@ export default function Program() {
                 </figure>
             </SectionGrid>
             <SectionGrid>
-                <div className="p-20 order-last">
+                <div className="p-11 md:p-20 order-last">
                     <Text as="paragraph" >INNOVACIÓN</Text>
                     <Text as="subtitle" color={'red'}>METODOLOGÍA</Text>
                     <p className="text-gray-400 mt-4">
@@ -30,7 +30,7 @@ export default function Program() {
                 </figure>
             </SectionGrid>
             <SectionGrid>
-                <div className="p-20 ">
+                <div className="p-11 md:p-20 ">
                     <Text as="subtitle">Objetivos del Programa</Text>
                     <ul className="mt-4 space-y-4">
                         <li className="w-full flex gap-6 text-gray-400">
@@ -61,7 +61,7 @@ export default function Program() {
                 </figure>
             </SectionGrid>
             <SectionGrid>
-                <div className="p-20 order-last">
+                <div className="p-11 md:p-20 order-last">
                     <Text as="subtitle">Selección del Programa</Text>
                     <ul className="mt-4 space-y-4">
                         <li className="w-full flex gap-6 text-gray-400">
