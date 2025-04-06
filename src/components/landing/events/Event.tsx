@@ -2,7 +2,7 @@ import { Clock3, MapPin } from 'lucide-react'
 import login from '@/assets/img/login/logo_hackaton 1.png'
 export default function Event() {
     return (
-        <article className=" rounded-lg bg-white flex items-center gap-10">
+        <article className=" rounded-lg bg-white flex flex-col md:flex-row items-center gap-10">
             <figure className="w-full max-w-lg">
                 <img className="w-full rounded-2xl" src={login} alt="logo del evento" />
             </figure>
