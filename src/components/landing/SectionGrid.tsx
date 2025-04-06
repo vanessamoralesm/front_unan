@@ -23,7 +23,7 @@ export default function SectionGrid({ container = false, children, className = '
 
     return (
         <section>
-            <div className={cn("grid grid-cols-2 items-center", className)}>
+            <div className={cn("grid lg:grid-cols-2 lg:items-center", className)}>
                 {children}
             </div>
         </section>

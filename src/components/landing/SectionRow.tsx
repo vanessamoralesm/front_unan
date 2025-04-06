@@ -17,7 +17,7 @@ interface Props {
 export default function SectionRow({ container = false,reverse = false , children, className = '' , tag,title,description,img, alt }: Props) {
   return (
     <SectionGrid container={container} className={className}>
-         <div className={cn("text-white p-20", {
+         <div className={cn("text-white p-12 md:p-20", {
             "order-last": reverse,
          })}>
           <div className="max-w-2xl w-full">
