@@ -13,13 +13,13 @@ export default function Investigation() {
       <div className="banner">
         <Container>
           <div>
-            <h1 className="text-4xl font-semibold mb-4">Investigación, Desarrollo e Innovación</h1>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4">Investigación, Desarrollo e Innovación</h1>
             <p className="text-white/80 max-w-3xl">Lorem ipsum dolor sit amet consectetur. Risus odio ullamcorper phasellus enim etiam. Integer at non venenatis convallis libero faucibus eu mi. Placerat a magna congue erat odio. Nibh odio sapien quis pharetra purus.</p>
           </div>
         </Container>
       </div>
-      <section className="p-32">
-        <Container className="flex gap-10 items-center">
+      <section className="p-8 py-14 md:py-0 md:p-32">
+        <Container className="flex flex-col md:flex-row gap-10 items-center">
           <div className="flex-1">
             <Text as="paragraph">BIENVENIDO</Text>
             <Text as="subtitle">!Conocenos¡</Text>
@@ -34,26 +34,26 @@ export default function Investigation() {
           </div>
         </Container>
       </section>
-      <section className="grid grid-cols-2">
+      <section className="grid md:grid-cols-2">
         <figure className="w-full h-full">
           <img className="w-full h-full" src={Mentors} alt="mentores de la universidad unan" />
         </figure>
-        <div className="bg-yellow-primary text-white p-18">
-          <h2 className="font-bold text-4xl mb-4">Nuestros investigadores</h2>
-          <div className="space-y-2 text-white/90 text-lg">
+        <div className="bg-yellow-primary text-white p-10 md:p-18">
+          <h2 className="font-bold text-3xl md:text-4xl mb-4">Nuestros investigadores</h2>
+          <div className="space-y-2 text-white/90 md:text-lg">
             <p>La  investigación y el desarrollo tecnológico son actividades llevadas a  cabo por personal calificado y cuya sólida formación científico-técnica  les permite realizar contribuciones al conocimiento básico y aplicado  con alto compromiso ético. </p>
             <p>Los investigadores, profesores  y tecnólogos también contribuyen activa e  intensamente a la formación integral de nuestros alumnos. </p>
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2">
-        <div className="bg-blue-primary  text-white p-18 flex items-center justify-center gap-8">
+      <section className="grid md:grid-cols-2">
+        <div className="bg-blue-primary  text-white p-18 flex flex-col md:flex-row items-center justify-center gap-8">
           <div>
-            <span className="inline-block text-8xl mb-1 font-semibold">16+</span>
+            <span className="inline-block text-6xl text-center md:text-left w-full md:text-8xl mb-1 font-semibold">16+</span>
             <p className="text-white/90">Profesores Investigadores</p>
           </div>
           <div>
-            <span className="inline-block text-8xl mb-1 font-semibold">29+</span>
+            <span className="inline-block text-6xl text-center md:text-left w-full md:text-8xl mb-1 font-semibold">29+</span>
             <p className="text-white/90">Investigadores</p>
           </div>
         </div>
@@ -62,9 +62,9 @@ export default function Investigation() {
         </figure>
       </section>
 
-      <section className="py-44 ">
+      <section className="py-20 md:py-44 ">
         <Container>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <article className="p-8 rounded-xl bg-white shadow-2xl shadow-blue-primary/10">
               <div className="flex justify-between gap-4">
                 <div className="">
@@ -140,7 +140,7 @@ export default function Investigation() {
           </div>
         </Container>
       </section>
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <Container>
           <Banner 
             withFigures={false}
