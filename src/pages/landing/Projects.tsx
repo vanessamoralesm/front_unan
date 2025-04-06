@@ -50,7 +50,7 @@ export default function Projects() {
 
         </SectionRow>
       
-      <section className="py-40">
+      <section className="py-20 md:py-40">
         <Container>
           <div>
             <Text as="subtitle" className="mb-1">
@@ -62,7 +62,7 @@ export default function Projects() {
               faucibus eu mi. Placerat a magna congue erat odio. Nibh odio
               sapien quis pharetra purus.
             </p>
-            <div className="grid gap-4 grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-2">
              <ProjectCard />
              <ProjectCard />
              <ProjectCard />
