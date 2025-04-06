@@ -7,7 +7,7 @@ import Text from "@/components/Text";
 import Container from "@/components/Container";
 import TeacherCard from "@/components/landing/teacher/TeacherCard";
 import Banner from "@/components/landing/Banner";
-import { Button } from "@/components/ui/button";
+import SectionRow from "@/components/landing/SectionRow";
 export default function Teachers() {
   return (
     <div>
@@ -35,22 +35,14 @@ export default function Teachers() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="grid grid-cols-2 items-center">
-          <figure className="h-full">
-            <img src={MentorQueEs} alt="estudiantes haciendo un proyecto" className="w-full h-full object-cover block " />
-          </figure>
-          <div className="text-white p-20">
-            <div className="max-w-2xl w-full">
-              <Text as="paragraph" className="">UNETE</Text>
-              <Text as="subtitle" className="mb-4 leading-[1.25] mt-1 ">¿Qué es un mentor?</Text>
-              <p className="text-gray-400 mb-4">
-              Es un referente para el alumno, que lo inspira a ejercer un liderazgo de  acción positiva en situaciones cotidianas y difíciles.Es un formador que se comparte con el otro, con la intensión de promover mutuamente su desarrollo integral.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SectionRow
+        tag="UNETE"
+        title="¿Qué es un mentor?"
+        description="Es un referente para el alumno, que lo inspira a ejercer un liderazgo de  acción positiva en situaciones cotidianas y difíciles.Es un formador que se comparte con el otro, con la intensión de promover mutuamente su desarrollo integral."
+        img={MentorQueEs}
+        alt="estudiantes haciendo un proyecto"
+        reverse
+      />
       <section className="py-20">
         <Container>
           <div className="mb-8 text-center">

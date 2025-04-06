@@ -13,6 +13,7 @@ import Register from "@/pages/auth/Register";
 import Dashboard from "@/pages/admin/Dashboard";
 import Investigation from "@/pages/landing/Investigation";
 import Enterprise from "@/pages/landing/Enterprise";
+import Program from "@/pages/landing/Program";
 
 export default function Index() {
 
@@ -56,6 +57,10 @@ export default function Index() {
                 {
                     path:'emprendimiento',
                     element: <Enterprise />
+                },
+                {
+                    path:'programa',
+                    element: <Program />
                 }
             ]
         },

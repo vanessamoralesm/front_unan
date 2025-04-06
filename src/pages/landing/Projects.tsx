@@ -8,6 +8,7 @@ import Banner from "@/components/landing/Banner";
 import ProjectBanner from '@/assets/img/proyectos-banner.png'
 import HeroProject from '@/assets/img/tittle/tittle_proyectos.png'
 import BannerHero from "@/components/BannerHero";
+import SectionRow from "@/components/landing/SectionRow";
 export default function Projects() {
   return (
     <div>
@@ -17,51 +18,23 @@ export default function Projects() {
         url={HeroProject} 
         color="#243982E6"/>
   
-      <section className="grid grid-cols-2 items-center">
-        <div className="text-white p-20 flex-1 flex justify-center">
-          <div className="max-w-2xl w-full">
-            <Text as="paragraph" className="">
-              EXPLORA
-            </Text>
-            <Text as="subtitle" className="mb-4 leading-[1.25] mt-1 ">
-              Transforma tu idea en un proyecto que inspire al mundo
-            </Text>
-            <p className="text-gray-400">
-              No subestimes el impacto de tu trabajo. Lo que hoy es solo un
-              código en tu pantalla, mañana podría ser la solución a un gran
-              problema. Comparte tu proyecto y deja que el mundo vea tu
-              potencial.
-            </p>
-          </div>
-        </div>
-        <figure className="flex-1">
-          <img
-            className="w-full  object-cover"
-            src={ProjectImg}
-            alt="mentores de la universidad unan"
-          />
-        </figure>
-      </section>
-      <section className="grid grid-cols-2 items-center">
-        <figure className="flex-1">
-          <img
-            className="w-full  object-cover"
-            src={ProjectImg}
-            alt="mentores de la universidad unan"
-          />
-        </figure>
-        <div className="text-white p-20 flex-1 flex justify-center">
-          <div className="max-w-2xl w-full">
-            <Text as="paragraph" className="">
-              EXPLORA
-            </Text>
-            <Text as="subtitle" className="mb-4 leading-[1.25] mt-1 ">
-              ¿Quisieras que tu proyecto apareciera aqui mismo?
-            </Text>
-            <p className="text-gray-400">
-              Proporciona tu correo electronico y solicita tu cuenta para
-              obtener acceso a la subida de proyectos
-            </p>
+        <SectionRow
+          tag="EXPLORA"
+          title="Transforma tu idea en un proyecto que inspire al mundo"
+          description="No subestimes el impacto de tu trabajo. Lo que hoy es solo un código en tu pantalla, mañana podría ser la solución a un gran problema. Comparte tu proyecto y deja que el mundo vea tu potencial."
+          img={ProjectImg}
+          alt="mentores de la universidad unan"
+        
+        />
+        <SectionRow
+          tag="Explora"
+          title="¿Quisieras que tu proyecto apareciera aqui mismo?"
+          description="Proporciona tu correo electronico y solicita tu cuenta para
+              obtener acceso a la subida de proyectos"
+          img={ProjectImg}
+          alt="mentores de la universidad unan"
+          reverse={true}
+        >
             <Input
               type="email"
               placeholder="Correo electronico"
@@ -74,9 +47,9 @@ export default function Projects() {
             >
               SOLICITAR CUENTA
             </Button>
-          </div>
-        </div>
-      </section>
+
+        </SectionRow>
+      
       <section className="py-40">
         <Container>
           <div>
