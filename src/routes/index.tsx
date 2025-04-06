@@ -43,7 +43,7 @@ export default function Index() {
                     element: <Events/>
                 },
                 {
-                    path:'finacimiento',
+                    path:'financiamiento',
                     element: <Business/>
                 },
                 {
