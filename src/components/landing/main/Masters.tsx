@@ -9,19 +9,19 @@ export default function Masters() {
     <div className="py-10">
       <Container>
         <div className="">
-          <div className="text-center">
+          <div className="md:text-center mb-4 md:mb-0">
             <GraduationCap className="text-red-primary mx-auto w-18 h-18 stroke-1 mb-4" />
             <Text as="paragraph">GUIANDO EL FUTURO</Text>
             <Text as="subtitle">Mentores que Inspiran Innovación</Text>
           </div>
           <Link
             to={"#"}
-            className="text-gray-400 transition-colors duration-300 flex w-max ml-auto items-center gap-2 hover:underline group/link"
+            className="text-gray-400 transition-colors duration-300 flex w-max md:ml-auto items-center gap-2 hover:underline group/link"
           >
             Ver todos los mentores
             <MoveRight className="group-hover/link:translate-x-2 transition-all duration-300" />
           </Link>
-          <div className="mt-10 grid grid-cols-3 gap-4 mx-auto max-w-5xl">
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-5xl">
             <article className="overflow-hidden rounded-md shadow">
               <figure className="w-full h-40">
                 <img

@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className=" text-white py-18 footer">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-30">
+        <div className="grid  lg:grid-cols-2 md:gap-16 lg:gap-30">
           
           {/* Logo y descripción */}
           <div>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-row gap-10">
+          <div className="flex flex-col md:flex-row gap-10">
             {/* Navegación */}
             <div>
               <h3 className="font-semibold text-base">Navegación</h3>

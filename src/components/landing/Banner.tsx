@@ -24,12 +24,12 @@ export default function Banner({ className = '', url, variant = 'default', withF
   }
 
   return (
-    <div className={`p-18 bg-blue-primary flex items-center justify-between text-white uppercase  text-3xl overflow-hidden relative  bg-no-repeat bg-center bg-cover ${className} `} style={{ background: backgroundImage }}>
+    <div className={`p-8 md:p-18 bg-blue-primary flex flex-col md:flex-row md:items-center gap-6 justify-between text-white uppercase text-2xl md:text-3xl overflow-hidden relative  bg-no-repeat bg-center bg-cover ${className} `} style={{ background: backgroundImage }}>
       {
         withFigures && (
           <>
-            <div className="circle size-40 rounded-full border border-white absolute top-0 left-0 -translate-x-1/6 -translate-y-3/5"></div>
-            <div className="circle size-40 rounded-full border border-white absolute top-0 left-0 -translate-x-4/6 translate-y-1/12"></div>
+            <div className="circle size-40 rounded-full border border-white/40 absolute top-0 left-0 -translate-x-1/6 -translate-y-3/5"></div>
+            <div className="circle size-40 rounded-full border border-white/40 absolute top-0 left-0 -translate-x-4/6 translate-y-1/12"></div>
           </>
         )
       }

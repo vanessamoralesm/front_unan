@@ -13,7 +13,7 @@ export default function Events() {
             <Text as="paragraph">CREANDO IDEAS</Text>
             <Text as="subtitle">Proximos Eventos</Text>
           </div>
-          <div className="grid grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
+          <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
             <article className="overflow-hidden rounded-md shadow-2xl shadow-blue-primary/10">
               <figure className="h-40">
                 <img

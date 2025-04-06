@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <div>
       <Hero/>
-      <Sponsors/>
+       <Sponsors/>
       <Learning/>
       <Projects/>
       <Masters/>

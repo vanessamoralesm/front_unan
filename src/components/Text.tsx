@@ -27,7 +27,7 @@ export default function Text({ as = 'text', children, className = '', color = nu
 
   if(as === 'subtitle') {
     return (
-      <h2 className={cn("text-[2.5rem] font-semibold text-blue-primary",className,colorClass)}>{children}</h2> 
+      <h2 className={cn("text-[1.875rem] md:text-[2.5rem] leading-10 md:leading-12 font-semibold text-blue-primary",className,colorClass)}>{children}</h2> 
     )
   }
 

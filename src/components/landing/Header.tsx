@@ -16,7 +16,7 @@ export default function Header() {
             Logo
           </Link>
           <nav>
-            <ul className=" text-sm flex items-center gap-4">
+            <ul className=" text-sm hidden md:flex items-center gap-4">
                 {
                   linksHeader.map((link, index) => (
                     <li key={index}>

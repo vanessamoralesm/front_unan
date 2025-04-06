@@ -5,7 +5,7 @@ export default function Learning() {
   return (
     <section className="py-10">
         <Container>
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                     <Text as="subtitle" className="flex-1 max-w-2xl leading-[1.25]">
                          Ruta de aprenzaje para los estudiantes
                     </Text>
