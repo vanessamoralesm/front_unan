@@ -20,7 +20,7 @@ export default function BannerHero({ className = '', title, description = '', ur
     >
       <Container>
         <div>
-          <h1 className="text-4xl font-semibold mb-4">{title}</h1>
+          <h1 className="text-3xl lg:text-4xl font-semibold mb-4">{title}</h1>
           {description && <p className="text-white/80 max-w-3xl">
             {description}
           </p>}
