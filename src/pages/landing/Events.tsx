@@ -27,13 +27,13 @@ export default function Events() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit, maiores qui molestiae omnis ab nihil corporis dicta atque. Asperiores facilis impedit nesciunt nostrum voluptate pariatur amet qui laboriosam praesentium?
             </p>
           </div>
-          <div className="py-10 flex items-end gap-4 ">
+          <div className="py-10 flex flex-col md:flex-row items-end gap-4 ">
             <div  className="w-full max-w-sm">
                 <Label htmlFor="search" className="text-gray-400 mb-2">Buscar eventos</Label>
                 <Input name="search" placeholder="Buscar" className="w-full"  />
             </div>
-            <Button className="h-11 " variant={'yellow'}> <Search/> BUSCAR EVENTO</Button>
-            <Button className="h-11 " variant={'blue'}> <Calendar /> FILTRAR POR FECHA</Button>
+            <Button className="h-11 w-full md:w-auto " variant={'yellow'}> <Search/> BUSCAR EVENTO</Button>
+            <Button className="h-11 w-full md:w-auto " variant={'blue'}> <Calendar /> FILTRAR POR FECHA</Button>
           </div>
           <div className="grid mt-8 gap-10">
             <Event/>
